@@ -1,7 +1,7 @@
 var bostonFontStyles = document.createElement("style");
 document.head.appendChild(bostonFontStyles);
 bostonFontStyles.setAttribute("boston-font-styles", "");
-bostonFontStyle.textContent = `
+bostonFontStyles.textContent = `
   @font-face {font-family: 'Boston', font-style: normal; font-weight: 100; src: url("https://cdn.jsdelivr.net/gh/mdestagreddy/Collection-JavaScript/BostonFont/BostonLight.otf")}
   @font-face {font-family: 'Boston', font-style: italic; font-weight: 100; src: url("https://cdn.jsdelivr.net/gh/mdestagreddy/Collection-JavaScript/BostonFont/BostonLightIt.otf")}
   
