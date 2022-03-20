@@ -1,3 +1,3 @@
-window.location.removedByCodepen = function() {
+window.location.removedByCodePen = function() {
   window.history.go(0);
 }
