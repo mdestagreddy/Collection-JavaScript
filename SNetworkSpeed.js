@@ -399,6 +399,7 @@ window.SNetworkSpeed.init = function(el, options = {}) {
             self.vars.network.xhr.removeEventListener("load", _xhr_load);
             self.vars.network.xhr.removeEventListener("error", _xhr_error);
             self.vars.network.xhr.removeEventListener("progress", _xhr_progress);
+            self.vars.network.xhr.upload.removeEventListener("progress", _xhr_progress);
             
             self.vars.network.xhr.open = function() {
                 open.apply(xhr, arguments);
@@ -413,6 +414,7 @@ window.SNetworkSpeed.init = function(el, options = {}) {
         xhr.addEventListener("load", _xhr_load);
         xhr.addEventListener("error", _xhr_error);
         xhr.addEventListener("progress", _xhr_progress);
+        xhr.upload.addEventListener("progress", _xhr_progress);
         
         xhr.open = function() {
             self.vars.network.method = arguments[0].toUpperCase();
